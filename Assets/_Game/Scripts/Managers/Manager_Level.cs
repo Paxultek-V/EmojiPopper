@@ -54,7 +54,7 @@ public class Manager_Level : MonoBehaviour
         {
             // YSO SDK
             Debug.Log("game started : " + m_totalLevelCleared);
-            YsoCorp.GameUtils.YCManager.instance.OnGameStarted(m_totalLevelCleared);
+            //YsoCorp.GameUtils.YCManager.instance.OnGameStarted(m_totalLevelCleared);
         }
     }
 
@@ -116,7 +116,7 @@ public class Manager_Level : MonoBehaviour
         SaveLevel();
         SaveTotalLevelCleared();
         Debug.Log("WIN");
-        YsoCorp.GameUtils.YCManager.instance.OnGameFinished(true);
+        //YsoCorp.GameUtils.YCManager.instance.OnGameFinished(true);
     }
 
     private void OnNoMoreMovesLeft()
@@ -129,7 +129,7 @@ public class Manager_Level : MonoBehaviour
 
         SaveLevel();
         Debug.Log("LOSE");
-        YsoCorp.GameUtils.YCManager.instance.OnGameFinished(false);
+        //YsoCorp.GameUtils.YCManager.instance.OnGameFinished(false);
     }
 
     private void OnRetryButtonClicked()
